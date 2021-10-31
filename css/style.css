@@ -1,32 +1,34 @@
 /* Style ogólne dla całego dokumentu */
-body,
-#portfolio {
+body {
     font-family: "Roboto";
     background-color: #E5E5E5;
     line-height: 1.5;
-    width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
 }
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+
+.container {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    
 }
 
 /* Stylowanie sekcji header */
 header {
     
     background-color: #ffff;
-    justify-content: space-between;
 }
 
 .header {
     display: flex;
     font-weight: 500;
+   
+
 }
 
 .menu-header {
-    padding-right: 25px;
+    margin-right: 25px;
+    font-size: 14px;
 }
 span {
     color: #2196F3;
@@ -34,15 +36,21 @@ span {
 
 .logotyp {
     font-family: "Raleway";
+    font-size: 26px;
 }
 #contact {
-    text-align: right;
-    padding-right: 30px;
+    margin-left: auto;
+}
+.contact-email {
+    margin-right: 50px;
+}
+.link {
+    display: flex;
+    align-items: center;
 }
 
 
 /* Stylowanie sekcji motto */
-
 
 #motto {
     background-color: #2F303A;
@@ -57,7 +65,6 @@ h1 {
     padding-top: 200px;
     padding-bottom: 30px;
     color: #ffff;
-
 }
 
 .order-service {
@@ -68,8 +75,6 @@ h1 {
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
-
-
 }
 
 .order-service-button {
@@ -86,11 +91,11 @@ h1 {
 
 /* Stylowanie sekcji main */
 .main-content {
-    display: flex;
-    margin-left: 215px;
-    margin-right: 215px;
+    margin: 0 auto;
 }
-
+h2 {
+    margin-left: 15px;
+}
 p {
     color: #757575;
     padding: 15px;
@@ -103,11 +108,12 @@ p {
 .images-our-project,
 #our-team {
     text-align: center;
+    justify-content: space-between;
 }
 
 
-/* Stylowanie sekcji our-team */
 
+/* Stylowanie sekcji our-team */
 figure{
     display: inline-block;
     margin: 15px;
@@ -116,7 +122,9 @@ figure{
     
 
 }
-
+.figure {
+    margin: 0 auto;
+}
 figcaption {
     padding: 15px;
 
@@ -148,16 +156,22 @@ footer {
 }
 .address {
     color: #ffff;
-    padding-left: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
-.link-address {
+.link-address,
+.city-address {
     color: #ffff;
     opacity: 60%;
+    font-size: 14px;
 }
 
 
 /* Stylowanie podstrony portfolio */
 
+#portfolio {
+    background-color: #ffff;
+}
 
 .main-portfolio {
     text-align: center;
@@ -166,21 +180,10 @@ footer {
 
 .button {
     background-color: #F5F4FA;
-    border-radius: 5px;
-    border: none;
-    width: 128px;
-    height: 31px;
 }
 
 .button:hover,
 .button:focus {
     background-color: #2196F3;
     color: #ffff;
-    border-radius: 5px;
 }
-
-.picture-name {
-    font-weight: 500;
-    color: black;
-}
-
